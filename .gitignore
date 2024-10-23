@@ -1,0 +1,35 @@
+ECHO is on.
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+*.env
+.env
+
+# Virtualenv
+venv/
+env/
+.venv/
+.env/
+.env.bak/
+.python-version
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+dlib/
+dlib-19.24.4/
+# Ignore large face_recognition.obj files
+dlib-19.24.4/build/temp.win32-cpython-312/Release/_dlib_pybind11.dir/Release/face_recognition.obj
+dlib-19.24.4/build/temp.win-amd64-cpython-312/Release/_dlib_pybind11.dir/Release/face_recognition.obj
+dlib-19.24.4/build/_dlib_pybind11.dir/Release/face_recognition.obj
+
+echo "dlib-19.24.4/" >> .gitignore
+echo "*.obj" >> .gitignore
